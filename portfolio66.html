@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-gray-800 text-white p-6">
+            <h1 class="text-2xl font-bold mb-6">Dashboard</h1>
+            <nav>
+                <ul class="space-y-4">
+                    <li><a href="#" class="block py-2 px-4 rounded hover:bg-gray-700">Projects</a></li>
+                    <li><a href="#" class="block py-2 px-4 rounded hover:bg-gray-700">Courses</a></li>
+                    <li><a href="#" class="block py-2 px-4 rounded hover:bg-gray-700">Settings</a></li>
+                    <li><a href="#" class="block py-2 px-4 rounded hover:bg-gray-700">Logout</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="flex-1 p-6">
+            <header class="flex justify-between items-center mb-6">
+                <h2 class="text-3xl font-semibold">Welcome!!</h2>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded">Edit Profile</button>
+            </header>
+            
+            <!-- Dashboard Overview -->
+            <section class="grid grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded shadow">
+                    <h3 class="text-xl font-semibold">Total Projects</h3>
+                    <p class="text-3xl font-bold">5</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow">
+                    <h3 class="text-xl font-semibold">Completed</h3>
+                    <p class="text-3xl font-bold">3</p>
+                </div>
+                <div class="bg-white p-6 rounded shadow">
+                    <h3 class="text-xl font-semibold">Ongoing</h3>
+                    <p class="text-3xl font-bold">2</p>
+                </div>
+            </section>
+            
+            <!-- Recent Projects -->
+            <div class="bg-white mt-6 p-4 rounded-lg shadow-md">
+
+                <h2 class="text-xl font-semibold mb-4">Recent Projects</h2>
+
+                <table class="w-full text-left">
+
+                    <thead>
+
+                        <tr class="bg-gray-200">
+
+                            <th class="p-2">Project</th>
+
+                            <th class="p-2">Status</th>
+
+                            <th class="p-2">Deadline</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+                        <tr class="border-t">
+
+                            <td class="p-2">UI/UX Website</td>
+
+                            <td class="p-2 text-green-600">completed</td>
+
+                            <td class="p-2">Aug 2024</td>
+
+                        </tr>
+                      
+
+                        <tr class="border-t">
+
+                            <td class="p-2">Portfolio Website</td>
+
+                            <td class="p-2 text-green-600">In progress</td>
+
+                            <td class="p-2">Feb 2025</td>
+
+                        </tr>
+
+                        
+
+                        <tr class="border-t">
+
+                            <td class="p-2">Blog Website</td>
+
+                            <td class="p-2 text-red-500">outgoing</td>
+
+                            <td class="p-2">March 2025</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>
